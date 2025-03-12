@@ -1,0 +1,12 @@
+Report:       precision    recall  f1-score   support
+
+     country       0.14      0.64      0.23      9217
+         pop       0.57      0.26      0.36     90941
+         rap       0.89      0.79      0.84    134645
+          rb       0.16      0.42      0.24     19688
+        rock       0.40      0.43      0.41     51265
+
+    accuracy                           0.54    305756
+   macro avg       0.43      0.51      0.42    305756
+weighted avg       0.64      0.54      0.57    305756
+

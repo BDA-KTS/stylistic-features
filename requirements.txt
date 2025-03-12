@@ -1,0 +1,15 @@
+torch
+torchvision
+torchaudio
+--index-url https://download.pytorch.org/whl/cu118
+transformers
+scikit-learn
+numpy
+imblearn
+bertopic==0.16.4
+better_profanity==0.7.0
+lexicalrichness==0.5.1
+nltk==3.9.1
+spacy==3.8.4
+textstat==0.7.4
+vaderSentiment==3.3.2
