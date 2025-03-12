@@ -8,17 +8,15 @@ The research focuses on analyzing and processing song lyrics to extract meaningf
 
 ## Datasets
 
-To replicate the classification process or the entire pipeline, you will need to download the datasets:
+All relevant datasets are available on [Zenodo](https://zenodo.org/records/14969295).
 
-- **Preprocessed Dataset (for direct classification):**  
-  Download from [Zenodo](https://zenodo.org/records/14969295).  
-  This dataset is already cleaned and preprocessed, allowing you to skip directly to the classification step.
+To replicate the entire pipeline, you will need to download the raw dataset:
 
-- **Original Dataset (for full pipeline replication):**  
+- **Original Dataset:**  
   Download from [Kaggle](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information).  
   This dataset is required if you want to replicate the entire pipeline, starting from raw data.
 
-  **NOTE:** Make sure to rename it to `songs_dataset.csv`
+  **NOTE:** Make sure to store it in a folder named `datasets`
 
 ## Pipeline Steps
 
@@ -44,10 +42,10 @@ This will generate the `preprocessed_dataset.csv` file, which contains the datas
    ```bash
    python dataset_splitting.py
 
-This generates the processed datasets: `processed_train_dataset.csv` and `processed_test_dataset.csv`
+This generates the processed datasets: `preprocessed_train_dataset.csv` and `preprocessed_test_dataset.csv`
 
 4. **Processing**  
-   Now, you need to process the training and test datasets. Run these script **in this order**:
+   Now, you need to process the training and test datasets. Run these script **in this exact order**:
 
    ```bash
    python data_processing_train.py
@@ -58,16 +56,17 @@ This generates the processed datasets: `processed_train_dataset.csv` and `proces
 5. **Classification**  
    Run the different classification scripts to train and evaluate the models.  
    These scripts will use the processed datasets to predict music genres based on lyrical content.
+   All reports will be saved in a dedicated folder named `reports`, with figures stored in a corresponding subfolder located at `reports/figures`.
 
 ## Usage
 
-To replicate the pipeline, follow the steps above in the specified order. Ensure that the required datasets are downloaded and placed in the appropriate directory before running the scripts.
+To replicate the pipeline, follow the steps above in the specified order. Ensure all required datasets are downloaded and placed in the correct directory before executing the scripts. All datasets should be stored in a folder named `datasets`.
 
-Store all datasets in a folder called `datasets`.
+**Note:** The following steps are only relevant if you are skipping directly to the **classification** step:
 
-- If a dataset has `_test_` in its name (e.g., preprocessed_test_dataset.csv), store it in a subfolder `/datasets/test`.
-
-- If a dataset has `_train_` in its name (e.g., preprocessed_train_dataset.csv), store it in a subfolder `/datasets/train`.
+1. Download the `processed_test_dataset.csv` and store it in a subfolder called `/datasets/test`.
+2. Download the `processed_train_dataset.csv` and store it in a subfolder called `/datasets/train`.
+3. Run any of the classification scripts (e.g., `classification.py`).
 
 Install the dependencies using the following command:
 ```bash

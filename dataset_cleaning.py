@@ -10,7 +10,7 @@ def clean_text(text):
     return text
 
 # Load the dataset
-lyric_database = pd.read_csv("datasets/songs_dataset.csv")
+lyric_database = pd.read_csv("datasets/song_lyrics.csv")
 
 # Filter out rows with infinite values in numerical columns
 numerical_cols = lyric_database.select_dtypes(include=['int64', 'float64']).columns
