@@ -47,9 +47,9 @@ Use the following commands to deploy the working environment and download necess
 
 ## How to Use
 
-- The script ```main.py``` calls all the feature extraction functions defined ```features_util/```. It reads the input data ```data/input_posts.tsv``` and writes the output as the original posts with stylistic features in separate columns in file ```stylistic_features_enriched_posts.tsv```. You can execute the script using the following command from the project main directory.
+- The script ```main.py``` calls all the feature extraction functions defined ```features_util/```. It reads the input data ```data/input_posts.tsv``` and writes the output as the original posts with stylistic features in separate columns in file ```stylistic_features_enriched_posts.tsv```. Execute the scripts using command:
 
-- ```paython main.py```  
+- ```python main.py```  
 
 - Populate the input file `data/input_posts.tsv` with social media posts on the topic of interest, keeping one per row (Optional: the file already has sample posts). 
 
@@ -61,6 +61,7 @@ The method builds on Omar Chouikha's original work for his thesis [https://githu
 
 ## Contact
 For more information, please contact <omcho100@uni-duesseldorf.de>
+
 
 
 
