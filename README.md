@@ -55,11 +55,10 @@ use the following envrionment to deploy the virtual working environment. It depl
 
 For assessing **lexical richness**, we employ the **LexicalRichness** package ([https://lexicalrichness.readthedocs.io/en/latest/](https://lexicalrichness.readthedocs.io/en/latest/)), which provides quantitative measures of vocabulary diversity in a text, such as the Type–Token Ratio (TTR), Root TTR, herdan, and maas. These metrics capture how varied and sophisticated the vocabulary is, helping evaluate writing quality, vocabulary knowledge, or linguistic competence. For **readability features**, we use **TextStat** ([https://pypi.org/project/textstat/](https://pypi.org/project/textstat/)), which computes indices like the Flesch Reading Ease and reading time. For **sentiment analysis**, we rely on **VADER Sentiment** ([https://pypi.org/project/vaderSentiment/](https://pypi.org/project/vaderSentiment/)). For **profanity detection**, we integrate **Better Profanity** ([https://pypi.org/project/better-profanity/](https://pypi.org/project/better-profanity/)), a lightweight and fast Python library for identifying and censoring offensive language. While the rhyme features are identified through regular expressions.
 
-## Acknowledgement
-
-The method builds on Omar Chouikha's original work for his thesis (https://github.com/bolandka/writing-style-lyrics).
+The method builds on Omar Chouikha's original work for his thesis [https://github.com/bolandka/writing-style-lyrics](https://github.com/bolandka/writing-style-lyrics).
 
 ## Contact
 For more information, please contact <katarina.boland@hhu.de>
+
 
 
